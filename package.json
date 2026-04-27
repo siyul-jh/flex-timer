@@ -1,6 +1,6 @@
 {
   "name": "flex-timer",
-  "version": "0.0.1",
+  "version": "0.1.0-demo",
   "description": "flex.team 메뉴바 타이머",
   "main": "src/app/main.js",
   "packageManager": "yarn@4.9.1",
@@ -30,7 +30,7 @@
   },
   "build": {
     "appId": "com.wavle.flextimer",
-    "productName": "FlexTimer",
+    "productName": "FlexTimer (Demo)",
     "mac": {
       "category": "public.app-category.productivity",
       "target": [
