@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./popover.css" />
+  </head>
+  <body>
+    <div class="card" id="main-card">
+      <!-- 헤더 -->
+      <div class="header">
+        <div class="status">
+          <div class="dot" id="status-dot"></div>
+          <span id="status-label">연결 중...</span>
+        </div>
+        <div class="header-actions">
+          <button class="btn-icon" id="btn-refresh" title="동기화">⇋</button>
+          <button class="btn-icon" id="btn-settings" title="설정">⚙️</button>
+        </div>
+      </div>
+
+      <!-- 타이머 -->
+      <div class="timer-section" id="timer-section">
+        <div class="elapsed" id="elapsed">--:--</div>
+        <div class="clock-in" id="clock-in">불러오는 중...</div>
+        <div class="expected-out" id="expected-out" style="display: none"></div>
+      </div>
+
+      <!-- 에러 -->
+      <div class="error-state" id="error-section" style="display: none">
+        <div class="error-msg" id="error-msg">flex.team 로그인이 필요해요</div>
+        <button class="btn-login" id="btn-login">로그인</button>
+      </div>
+
+      <!-- 출근/퇴근 버튼 -->
+      <div class="action-section" id="action-section" style="display: none">
+        <button class="btn-action btn-clock-in" id="btn-clock-in" style="display: none">
+          출근하기
+        </button>
+        <button class="btn-action btn-clock-out" id="btn-clock-out" style="display: none">
+          퇴근하기
+        </button>
+      </div>
+
+      <!-- 휴게시간 설정 -->
+      <div class="break-section" id="break-section">
+        <span class="break-label">휴게시간</span>
+        <div class="break-control">
+          <button class="btn-break" id="break-minus">−</button>
+          <span class="break-value" id="break-value">1h 30m</span>
+          <button class="btn-break" id="break-plus">+</button>
+        </div>
+      </div>
+
+      <!-- 푸터 -->
+      <div class="footer">
+        <button class="btn-text" id="btn-flex">flex.team 열기</button>
+        <button class="btn-text" id="btn-quit">종료</button>
+      </div>
+    </div>
+
+    <script src="./popover.js"></script>
+  </body>
+</html>
